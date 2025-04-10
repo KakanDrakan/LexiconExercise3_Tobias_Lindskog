@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LexiconExercise3_Tobias_Lindskog", "LexiconExercise3_Tobias_Lindskog\LexiconExercise3_Tobias_Lindskog.csproj", "{5FF17B3C-F41B-44F6-BAA6-1C20D73EF392}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FF17B3C-F41B-44F6-BAA6-1C20D73EF392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF17B3C-F41B-44F6-BAA6-1C20D73EF392}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF17B3C-F41B-44F6-BAA6-1C20D73EF392}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF17B3C-F41B-44F6-BAA6-1C20D73EF392}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C32672B2-D601-4739-B7F8-C5B04A2681D4}
+	EndGlobalSection
+EndGlobal
