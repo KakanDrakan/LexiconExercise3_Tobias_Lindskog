@@ -10,10 +10,6 @@ namespace LexiconExercise3_Tobias_Lindskog
             try
             {
                 MainMenu();
-                /*p.CreateVehicle(VehicleType.Car ,"Carbrand", "420", 1900, 1500);
-                p.CreateVehicle(VehicleType.Truck, "TrucksAB", "AB123", 2001, 5000);
-                p.CreateVehicle(VehicleType.Motorcycle, "MotorCAB", "motorcycleModel1", 2020, 142);
-                p.CreateVehicle(VehicleType.ElectricScooter, "Electropop", "WeScootin", 1951, 30);*/
             }
             catch (ArgumentException ex)
             {
@@ -31,7 +27,8 @@ namespace LexiconExercise3_Tobias_Lindskog
                     $"1. Add vehicle {Environment.NewLine}" +
                     $"2: List all vehicles {Environment.NewLine}" +
                     $"3: Remove all vehicles from list {Environment.NewLine}" +
-                    $"4: Clear console");
+                    $"4: Add some pre-defined vehicles {Environment.NewLine}" +
+                    $"5: Clear console");
                 string input = Console.ReadLine();
                 Console.WriteLine();
 
@@ -50,6 +47,9 @@ namespace LexiconExercise3_Tobias_Lindskog
                         VehicleHandler.ClearListOfVehicles();
                         break;
                     case "4":
+                        AddPreDefinedVehicles();
+                        break;
+                    case "5":
                         Console.Clear();
                         break;
                     default:
@@ -59,6 +59,13 @@ namespace LexiconExercise3_Tobias_Lindskog
 
                 }
             } while (isAlive);
+        }
+        public static void AddPreDefinedVehicles()
+        {
+            VehicleHandler.CreateVehicle(VehicleType.Car ,"Carbrand", "Carmodel", 1900, 1500);
+            VehicleHandler.CreateVehicle(VehicleType.Truck, "TrucksAB", "ABC123", 2001, 5000);
+            VehicleHandler.CreateVehicle(VehicleType.Motorcycle, "MotorCAB", "motorcycleModel1", 2020, 142);
+            VehicleHandler.CreateVehicle(VehicleType.ElectricScooter, "Electropop", "WeScootin", 1951, 30);
         }
     }
 }

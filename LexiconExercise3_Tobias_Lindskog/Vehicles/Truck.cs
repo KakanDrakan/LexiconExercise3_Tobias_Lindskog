@@ -13,7 +13,7 @@ namespace LexiconExercise3_Tobias_Lindskog.Vehicles
         public int CargoCapacity { get; set; }
         public Truck()
         {
-            cargoCapacity = 40;
+            cargoCapacity = 20;
         }
 
         public override void SetUniqueTrait()

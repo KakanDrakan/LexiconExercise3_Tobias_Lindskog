@@ -69,7 +69,7 @@ namespace LexiconExercise3_Tobias_Lindskog
 
         public static Vehicle UserCreateVehicle()
         {
-            Vehicle vehicle = GetVehicleTypeFromUserInput();
+            Vehicle vehicle = GetVehicleSubclassFromUserInput();
             vehicle.Brand = AskForString("Brand");
             vehicle.Model = AskForString("Model");
             vehicle.Year = AskForInt("Year");
@@ -81,7 +81,7 @@ namespace LexiconExercise3_Tobias_Lindskog
             listOfVehicleInstances.Add(vehicle);
             return vehicle;
         }
-        private static Vehicle GetVehicleTypeFromUserInput()
+        private static Vehicle GetVehicleSubclassFromUserInput()
         {
             bool success = false;
             VehicleType[] types = (VehicleType[])Enum.GetValues(typeof(VehicleType));
