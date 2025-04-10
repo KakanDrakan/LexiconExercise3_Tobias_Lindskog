@@ -51,7 +51,7 @@ namespace LexiconExercise3_Tobias_Lindskog
                         VehicleHandler.AddPreDefinedVehicles();
                         break;
                     case "5":
-                        SystemError.PrintAllErrorMessages();
+                        SystemError.AddAndPrintErrors();
                         break;
                     case "6":
                         Console.Clear();

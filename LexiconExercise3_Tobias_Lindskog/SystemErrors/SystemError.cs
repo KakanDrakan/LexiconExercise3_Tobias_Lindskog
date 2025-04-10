@@ -22,13 +22,15 @@ namespace LexiconExercise3_Tobias_Lindskog.SystemErrors
             {
                 Console.WriteLine(error.ErrorMessage());
             }
+            Console.WriteLine();
         }
 
-        public static void AddErrorTypesToList()
+        public static void AddAndPrintErrors()
         {
-            listOfErrors.Add(new EngineFailureError());
-            listOfErrors.Add(new BrakeFailureError());
-            listOfErrors.Add(new TransmissionError());
+            new EngineFailureError();
+            new BrakeFailureError();
+            new TransmissionError();
+            PrintAllErrorMessages();
         }
     }
 }
