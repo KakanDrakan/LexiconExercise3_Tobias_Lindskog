@@ -23,5 +23,12 @@ namespace LexiconExercise3_Tobias_Lindskog.SystemErrors
                 Console.WriteLine(error.ErrorMessage());
             }
         }
+
+        public static void AddErrorTypesToList()
+        {
+            listOfErrors.Add(new EngineFailureError());
+            listOfErrors.Add(new BrakeFailureError());
+            listOfErrors.Add(new TransmissionError());
+        }
     }
 }

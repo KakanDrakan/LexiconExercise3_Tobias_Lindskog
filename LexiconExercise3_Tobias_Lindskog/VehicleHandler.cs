@@ -128,5 +128,12 @@ namespace LexiconExercise3_Tobias_Lindskog
             } while (!success);
             return inputAsInt;
         }
+        public static void AddPreDefinedVehicles()
+        {
+            VehicleHandler.CreateVehicle(VehicleType.Car, "Carbrand", "Carmodel", 1900, 1500);
+            VehicleHandler.CreateVehicle(VehicleType.Truck, "TrucksAB", "ABC123", 2001, 5000);
+            VehicleHandler.CreateVehicle(VehicleType.Motorcycle, "MotorCAB", "motorcycleModel1", 2020, 142);
+            VehicleHandler.CreateVehicle(VehicleType.ElectricScooter, "Electropop", "WeScootin", 1951, 30);
+        }
     }
 }

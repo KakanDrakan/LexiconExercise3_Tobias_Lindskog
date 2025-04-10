@@ -28,7 +28,8 @@ namespace LexiconExercise3_Tobias_Lindskog
                     $"2: List all vehicles {Environment.NewLine}" +
                     $"3: Remove all vehicles from list {Environment.NewLine}" +
                     $"4: Add some pre-defined vehicles {Environment.NewLine}" +
-                    $"5: Clear console");
+                    $"5: Print error messages {Environment.NewLine}" +
+                    $"6: Clear console");
                 string input = Console.ReadLine();
                 Console.WriteLine();
 
@@ -47,25 +48,20 @@ namespace LexiconExercise3_Tobias_Lindskog
                         VehicleHandler.ClearListOfVehicles();
                         break;
                     case "4":
-                        AddPreDefinedVehicles();
+                        VehicleHandler.AddPreDefinedVehicles();
                         break;
                     case "5":
+                        SystemError.PrintAllErrorMessages();
+                        break;
+                    case "6":
                         Console.Clear();
                         break;
                     default:
                         Console.WriteLine("Invalid input, try again");
                         break;
 
-
                 }
             } while (isAlive);
-        }
-        public static void AddPreDefinedVehicles()
-        {
-            VehicleHandler.CreateVehicle(VehicleType.Car ,"Carbrand", "Carmodel", 1900, 1500);
-            VehicleHandler.CreateVehicle(VehicleType.Truck, "TrucksAB", "ABC123", 2001, 5000);
-            VehicleHandler.CreateVehicle(VehicleType.Motorcycle, "MotorCAB", "motorcycleModel1", 2020, 142);
-            VehicleHandler.CreateVehicle(VehicleType.ElectricScooter, "Electropop", "WeScootin", 1951, 30);
         }
     }
 }
